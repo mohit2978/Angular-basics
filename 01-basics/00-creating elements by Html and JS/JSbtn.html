@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Button</title>
+    <script>
+      //this function runs after the page is fully loaded
+      function createButton() {
+        //creating button by JS
+        var btnRef = document.createElement("button");//creates <button></button>
+
+        btnRef.innerText = "Javascript Button";
+
+        document.querySelector("body").appendChild(btnRef);//on body we put this button
+      }
+    </script>
+  </head>
+  <body onload="createButton()"></body>
+</html>
