@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      // on runtime if you need to change content that can be done by JS only!!
+      //on click of button changing DOM
+      function chnageContentStyle() {
+        document.querySelector("h2").innerText = "DOM in Javascript"; //changing innertext
+
+        document.querySelector("h2").style.color = "red";//changing style
+
+        var pRef = document.createElement("p");//create para  tag
+
+        pRef.innerText = "this is my new para"; //<p> this is  innertext area </p>
+
+        document.querySelector("body").appendChild(pRef); // appendChild makes it like <body><p></p></body>
+
+        //this is only DOM manipulation where we are changing HTML structure at runtime
+      }
+    </script>
+  </head>
+  <body>
+    <h2>DOM Manipulation</h2>
+    <button onclick="chnageContentStyle()">Add Content</button>
+  </body>
+</html>
