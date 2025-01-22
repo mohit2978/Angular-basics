@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  name:string='Mohit';
+
+  change():void{
+    console.log("here");
+    
+    this.name='ROHIT';
+  }
 }
