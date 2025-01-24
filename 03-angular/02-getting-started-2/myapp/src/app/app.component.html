@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<main class="container py-5">
+  <div class="row align-items-center">
+    <!-- Left Column: Image -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?cs=srgb&dl=pexels-olly-842811.jpg&fm=jpg" class="img-fluid rounded-circle shadow" alt="Your Photo" style="width: 200px; height: 200px;">
+    </div>
+    <!-- Right Column: Text -->
+    <div class="col-lg-6">
+      <h1 class="display-4">Hi, I'm {{name}}!</h1>
+      <p class="lead">
+        I'm a [Your Profession/Role] passionate about [Your Interests or Expertise]. 
+        I specialize in [Skills/Technologies], and I love [Hobby/Interest].
+      </p>
+      <p>
+        Whether I'm [Activity 1, e.g., writing code], [Activity 2, e.g., designing graphics], 
+        or [Activity 3, e.g., exploring new ideas], I'm always striving to learn, grow, and create something meaningful.
+      </p>
+      <a href="#portfolio" class="btn btn-primary btn-lg me-2">View My Work</a>
+      <a href="#contact" class="btn btn-outline-secondary btn-lg">Get in Touch</a>
+    </div>
+  </div>
+</main>
+
+<app-work
+  [img]="posts[0].img"
+  [author]="posts[0].author"
+  [title]="posts[0].title"
+></app-work>
+
+<app-work
+  [img]="posts[1].img"
+  [author]="posts[1].author"
+  [title]="posts[1].title"
+></app-work>
+
+<app-work
+  [img]="posts[2].img"
+  [author]="posts[2].author"
+  [title]="posts[2].title"
+></app-work>
+
+<app-footer></app-footer>
